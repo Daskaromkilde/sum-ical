@@ -1,0 +1,5 @@
+node_modules/
+.env
+# Compose contains your private calendar link once configured.
+docker-compose.yml
+secret.py
