@@ -1,6 +1,6 @@
 from ics import Calendar
 import requests
-from .secret import url
+from secret import url
 import json
 
 
