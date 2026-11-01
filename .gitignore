@@ -3,3 +3,4 @@ node_modules/
 # Compose contains your private calendar link once configured.
 docker-compose.yml
 secret.py
+__pycache__

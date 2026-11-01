@@ -1,4 +1,4 @@
-from ics import Calendar
+from ics import Calendar, Event
 import requests
 from secret import url
 import json
@@ -24,7 +24,7 @@ def fetch_calendar(url: str) -> Calendar:
 Sorts a set of Events in ascending dates.
 Returns a date ascending orderered list containing Events. 
 '''
-def sort_shifts_in_set(c: Calendar) -> list:
+def sort_shifts_in_set(c: Calendar) -> list[Event]:
     events = sorted(c.events, key=lambda event: event.begin)
     return events
 
@@ -32,8 +32,11 @@ def sort_shifts_in_set(c: Calendar) -> list:
 '''
 Builds the dictionary containing all shifts, their hours and whether it's a weekday or not
 '''
-def build_all_shifts_dict(events: Calendar):
+def build_all_shifts_dict(events: list[Event]):
     for event in events:
+        if event.duration is None:
+            continue
+
         date = event.begin.format("YYYYMMDD")
         
         all_shifts[date]["hours"] += event.duration.total_seconds() / 3600
