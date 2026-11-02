@@ -1,0 +1,42 @@
+{
+    "20260301": {
+        "hours": 55.0,
+        "weekend": false
+    },
+    "20260401": {
+        "hours": 15.0,
+        "weekend": false
+    },
+    "20260501": {
+        "hours": 75.0,
+        "weekend": false
+    },
+    "20260601": {
+        "hours": 57.0,
+        "weekend": false
+    },
+    "20260701": {
+        "hours": 83.0,
+        "weekend": false
+    },
+    "20260801": {
+        "hours": 145.0,
+        "weekend": false
+    },
+    "20260901": {
+        "hours": 158.0,
+        "weekend": false
+    },
+    "20261030": {
+        "hours": 5.25,
+        "weekend": false
+    },
+    "20261031": {
+        "hours": 4.5,
+        "weekend": true
+    },
+    "20261101": {
+        "hours": 4.5,
+        "weekend": true
+    }
+}
